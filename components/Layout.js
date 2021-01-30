@@ -43,7 +43,7 @@ export default function Layout(props) {
           <hr className="m-2" />
           <div className="p-2">
             <button
-              className="w-full px-4 py-2 text-white transition duration-150 bg-blue-900 rounded hover:bg-blue-800"
+              className="w-full px-4 py-2 text-white transition duration-150 bg-blue-900 rounded-full hover:bg-blue-800"
               onClick={() => signOut()}
             >
               Log out
