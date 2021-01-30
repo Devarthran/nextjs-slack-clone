@@ -1,4 +1,4 @@
-# Realtime chat example using Supabase
+# Realtime chat example using Supabase!!!
 
 This is a full-stack Slack clone example using:
 
