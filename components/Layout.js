@@ -34,7 +34,7 @@ export default function Layout(props) {
         <div className="p-2">
           <div className="p-2">
             <button
-              className="w-full px-4 py-2 text-black transition duration-150 bg-green-500 rounded hover:bg-red-300"
+              className="w-full px-4 py-2 text-black transition-all duration-500 bg-green-500 rounded-full hover:bg-red-300 hover:text-white"
               onClick={() => newChannel()}
             >
               New Channel
