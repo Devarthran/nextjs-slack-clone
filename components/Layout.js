@@ -25,16 +25,16 @@ export default function Layout(props) {
   }
 
   return (
-    <main className="main flex h-screen w-screen overflow-hidden">
+    <main className="flex w-screen h-screen overflow-hidden main">
       {/* Sidebar */}
       <nav
-        className="w-64 bg-gray-900 text-gray-100 overflow-scroll "
+        className="w-64 overflow-scroll text-gray-100 bg-gray-900 "
         style={{ maxWidth: '20%', minWidth: 150, maxHeight: '100vh' }}
       >
-        <div className="p-2 ">
+        <div className="p-2">
           <div className="p-2">
             <button
-              className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
+              className="w-full px-4 py-2 text-black transition duration-150 bg-green-500 rounded hover:bg-red-300"
               onClick={() => newChannel()}
             >
               New Channel
@@ -43,7 +43,7 @@ export default function Layout(props) {
           <hr className="m-2" />
           <div className="p-2">
             <button
-              className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
+              className="w-full px-4 py-2 text-white transition duration-150 bg-blue-900 rounded hover:bg-blue-800"
               onClick={() => signOut()}
             >
               Log out
@@ -64,7 +64,7 @@ export default function Layout(props) {
       </nav>
 
       {/* Messages */}
-      <div className="flex-1 bg-gray-800 h-screen">{props.children}</div>
+      <div className="flex-1 h-screen bg-gray-800">{props.children}</div>
     </main>
   )
 }
